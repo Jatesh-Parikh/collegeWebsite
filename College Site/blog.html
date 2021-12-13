@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Website | Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/be9da0487e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header section -->
+    <section class="about-header">
+      <nav>
+        <a href="index.html"
+          ><img src="./images/logo.png" alt="College Logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="far fa-times-circle" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="./courses.html">Courses</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1 id="blog-h1">Our Online Programs for 2021</h1>
+    </section>
+    <!-- end of header section -->
+    <!-- blog content -->
+    <section class="blog-content">
+      <div class="blog-row">
+        <div class="blog-column-left">
+          <img src="./images/certificate.jpg" alt=" Our Certified courses" />
+          <h3>Our Certified Courses</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate,
+            animi esse minus qui ipsam delectus, aliquid optio aspernatur omnis
+            ullam eos ratione recusandae culpa hic officia! Repellendus nihil
+            modi qui?
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
+            esse fugiat vero repellat quia repellendus corporis facere
+            laboriosam quibusdam. Nesciunt maxime ut aut? Nam necessitatibus,
+            iste vitae ratione laudantium dicta deserunt veritatis obcaecati
+            quia enim blanditiis alias reiciendis repellat eligendi at ab in
+            autem incidunt pariatur ex accusantium quasi aliquam perspiciatis
+            non? Eius, qui animi!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nam
+            corrupti possimus quasi delectus quo labore quas aliquam numquam
+            quos quibusdam, harum minus reiciendis corporis vero provident error
+            eligendi dignissimos perferendis autem earum aliquid. Voluptatem
+            quam animi voluptas! Nesciunt doloribus sed eligendi accusamus
+            distinctio explicabo quo amet, ipsa voluptatum optio illo facilis,
+            fugiat deserunt unde facere debitis officiis iure. Obcaecati!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem debitis
+            corporis voluptatum atque, architecto cum id eligendi tenetur quae
+            iure error, ab nobis in dolorem.
+          </p>
+          <div class="comment-box">
+            <h4>Leave a comment</h4>
+            <form class="comment-form">
+              <input type="text" placeholder="Your Name">
+              <input type="email" placeholder="Your Email">
+              <textarea name="" id="" cols="30" rows="5" placeholder="Your Comment"></textarea>
+              <button class="hero-btn form-btn" type="submit">Post Comment</button>
+
+            </form>
+            
+          </div>
+        </div>
+        <div class="blog-column-right">
+          <h3>Post Categories</h3>
+          <div class="">
+            <span>Business Analytics</span>
+            <span>21</span>
+          </div>
+          <div class="">
+            <span>Data Science</span>
+            <span>2</span>
+          </div>
+          <div class="">
+            <span>Artificial Intelligence</span>
+            <span>31</span>
+          </div>
+          <div class="">
+            <span>Machine Learning</span>
+            <span>12</span>
+          </div>
+          <div class="">
+            <span>Kebernetes</span>
+            <span>9</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <h3>About Us</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur
+        dolorem <br />
+        iusto dolore possimus maiores voluptate distinctio eveniet iste a?
+      </p>
+      <div class="footer-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fas fa-heart"></i> by Jatesh</p>
+      <p class="copyright">&COPY; Copyright 2021. All Rights Reserved</p>
+    </footer>
+    <!-- Javascript for toggle menu -->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-15em";
+      }
+    </script>
+    <!-- end of Javascript for toggle menu -->
+  </body>
+</html>
